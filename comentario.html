@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <title>BookHall</title>
+    <link rel="icon" type="image/png" href="img/libros.png" />
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+<div class="menuContainer"></div>
+<div><h1 class="titulo">Comentario</h1></div>
+<div class="formulario">
+    <form action="comentario.php" method="post" enctype="multipart/form-data" class="busqueda-basica" >
+        <table class="formulario comentario">
+         <tr> 
+            <td class="name first c"><label>Comentario</label></td>
+            <td class="i-form"><textarea name="comentario" placeholder=" Escribe tu comentario aqui" class="comentario"></textarea></td>
+         </tr>
+         <tr> 
+            <td class="name"><label>Correo electronico</label></td>
+            <td class="i-form last "><input type="text" name="correo" placeholder=" nora@gmail.com" value=""></td>
+         </tr>
+     </table>
+     <div class="botones b-basica">
+         <label><input type="reset" value="Cancelar"></input></label>
+         <label><input type="submit" value="Confirmar" class="enviar"></input></label>
+     </div>
+    </form>
+</div>
+</body>
+ <script>
+    $(document).ready(function () {
+      $('.menuContainer').load('./menu.html');
+    });
+</script>
+</html>

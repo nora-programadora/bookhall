@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>BookHall</title>
+    <link rel="icon" type="image/png" href="img/libros.png" />
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="icon" type="image/png" href="" />
+</head>
+<body>
+<div class="menuContainer"></div>
+<div><h1 class="titulo">Actualizar ejemplar de libro</h1></div>
+<div class="formulario">
+    <form action="mostrar-ejemplar-libro-actualizar.php" method="post" enctype="multipart/form-data" class="registro-usuario" >
+        <center>
+            <table class="formulario">
+              <tr>
+                <td class="name first"><label>Código de ejemplar</label></td>
+                <td class="i-form last"><input type="text" name="codigo_ejemplar" placeholder="123456789" value=""></td>
+              </tr>
+            </table>
+        </center>
+        <br>
+        <div class="botones b-prestamo">
+            <label><input type="reset" value="Borrar"></input></label>
+            <label><input type="submit" value="Buscar" class="enviar"></input></label>
+        </div>
+        <!--
+        <table class="formulario">
+            <tr> 
+                <td class="name first"><label>Titulo de ejemplar</label></td>
+                <td class="i-form"><input type="text" name="titulo_ejemplar" placeholder="Estructura de datos II" value=""></td>
+            </tr>
+            <tr> 
+                <td class="name"><label>Autor</label></td>
+                <td class="i-form"><input type="text" name="autor" placeholder="Koffman" value=""></td>
+            </tr>
+            <tr> 
+                <td class="name"><label>Volumen</label></td>
+                <td class="i-form"><input type="text" name="volumen" placeholder="1" value=""></td>
+            </tr>
+            <tr> 
+                <td class="name"><label>Fecha</label></td>
+                <td class="i-form"><input type="date" name="fecha" placeholder="AAAA/MM/DD" value="" class="el-date"></td>
+            </tr>
+            <tr> 
+                <td class="name"><label>Procedencia</label></td>
+                <td class="i-form last"><input type="text" name="procedencia" placeholder="Biblioteca del estado" value=""></td>
+            </tr>
+        </table>
+     <br>
+     <div><h2 class="titulo">Pie editorial</h2></div>
+     <table class="formulario pie-editorial">
+         <tr> 
+            <td class="name first"><label>Lugar</label></td>
+            <td class="i-form"><input type="text" name="lugar" placeholder="País/región" value=""></td>
+         </tr>
+         <tr> 
+            <td class="name"><label>Fecha de edición</label></td>
+            <td class="i-form"><input type="text" name="fecha_edicion" placeholder="1999" value=""></td>
+         </tr>
+         <tr> 
+            <td class="name"><label>Editorial</label></td>
+            <td class="i-form"><input type="text" name="editorial" placeholder="Mc Graw Hill" value=""></td>
+         </tr>
+         <tr>
+            <td class="name"><label>Año</label></td>
+            <td class="i-form last"><input type="text" name="anio" placeholder="1998" value=""></td>
+         </tr>
+     </table>
+     <div class="botones r-usuario">
+         <label><input type="reset" value="Borrar"></input></label>
+         <label><input type="submit" value="Actualizar" class="enviar"></input></label>
+     </div>
+     -->
+    </form>
+</div>
+</body>
+<script>
+$(document).ready(function () {
+  $('.menuContainer').load('./menu.html');
+});
+</script>
+</html>

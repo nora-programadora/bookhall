@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+pa/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -67,30 +67,288 @@ table {
  background-color: #9B1212;
  color: #fff;
  }
+ #button li a:hover {
+    background-color: #ca5555;
+}
  ul{
  	float: right;
  	padding: 0;
  }
- div.icon-client {
+ /*ESTILO DEL MENÚ*/
+.nav > li {
+    float:left;
+}
+.nav li a {
+    background-color:#000;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    width: -webkit-fill-available;
+}            
+.nav li a:hover {
+    background-color:#434343;
+}
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    padding-top: 40px;
+}
+.nav li ul{
+    width: 120px;
+}
+.nav li:hover > ul {
+    display:block;
+}
+.nav li ul li {
+    position:relative;
+}
+.nav li ul li {
+    width: 120px;
+}
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+div.icon-client {
     display: inline-block;
     padding: 10px;
 }
 form {
     padding: 20px;
-    /* margin-top: 50px; */
+    padding-right: 0px;
     cursor: pointer;
     display: block;
-    width: 290px;
     margin: 0 auto;
     text-align: left;
-    background-color: #D26A6A;
+}
+form.busqueda-basica {
+    padding: 20px;
+    padding-right: 0px;
+    cursor: pointer;
+    display: block;
+    width: 540px;
+    margin: 0 auto;
+    text-align: left;
+}
+form.alta-actor {
+    padding: 20px;
+    padding-right: 0px;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+form.login-general {
+    padding: 20px;
+    padding-right: 0px;
+    cursor: pointer;
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    text-align: left;
+}
+form.perfil-actor {
+    padding: 20px;
+    padding-right: 0px;
+    cursor: pointer;
+    display: block;
+    width: 380px;
+    margin: 0 auto;
+    text-align: left;
+}
+form.registro-usuario {
+    padding: 20px;
+    padding-right: 0px;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+div.botones.login-g {
+    width: 305px;
+    padding-top: 20px;
+}
+div.botones.b-basica{
+    width: 547px;
+    padding-top: 20px;
+}
+div.botones.perfil-a {
+    width: 368px;
+    padding-top: 20px;
+}
+div.botones.r-usuario {
+    width: 305px;
+    padding-top: 20px;
+}
+div.botones.b-prestamo {
+    padding-top: 20px;
+}
+div.botones.b-basica.x {
+    width: 300px;
+    padding-top: 20px;
+}
+form.registro-usuario.titulo {
+    width: min-content;
+}
+form.busqueda-multi-campo {
+    padding: 20px;
+    padding-right: 0px;
+    cursor: pointer;
+    display: block;
+    width: 270px;
+    margin: 0 auto;
+    text-align: left;
+}
+div.botones.b-multi-campo {
+    width: 255px;
+    padding-top: 20px;
 }
 div.formulario {
     margin-top: 20px;
 }
 h1.titulo{
-	font-size: 24px;
+    font-size: 24px;
     font-family: sans-serif;
     color: #9B1212;
     margin: 40px 0px 20px 0px;
+    text-align: center;
+}
+/*FORMULARIO*/
+table{
+    border-radius: 10px;
+}
+table.formulario {
+    font-family: Arial;
+    font-size: 12px;
+    color: #fff;
+    background-color: #D26A6A;
+    width: max-content;
+}
+table.formulario.comentario {
+    width: -webkit-fill-available;
+}
+table.full-table {
+    font-family: Arial;
+    font-size: 12px;
+    color: #fff;
+    background-color: #D26A6A;
+    width: -webkit-fill-available;
+}
+table.formulario.pie-editorial {
+    width: 305px;
+}
+table.formulario.prestamo-solicitado {
+    background-color: #9B1212;
+    width: -webkit-fill-available;
+}
+table.formulario.paraprestamo {
+    background: #9B1212;
+}
+input[type="text"], select {
+    /* border: 1px solid black; */
+    border-radius: 4px;
+    width: -webkit-fill-available;
+    border-style: hidden;
+}
+input.prestamos {
+    color: #9B1212;
+    background-color: antiquewhite;
+    border-style: hidden;
+}
+td.name {
+    padding: 5px 5px 5px 15px;
+}
+td.name.first {
+    padding-top: 20px;
+}
+td.r-name {
+    padding: 15px 15px 15px 15px;
+    border: 1px solid white;
+}
+td.i-form {
+    padding: 5px 5px 5px 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+}
+td.i-form.last {
+    padding-bottom: 20px;
+}
+td.name.first.c {
+    vertical-align: -webkit-baseline-middle;
+}
+th.r-title {
+    padding: 15px 15px 15px 15px;
+    border: 1px solid white;
+}
+input.el-date {
+    width: -webkit-fill-available;
+}
+input[type="reset"] {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: #a32222;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 5px 10px 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a32222;
+    border-radius: 4px;
+    /* border-image: initial; */
+}
+input[type="submit"].enviar {
+    float: right;
+    padding-top: ;
+}
+input.enviar {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: #a32222;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 5px 10px 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a32222;
+    border-radius: 4px;
+}
+label.itr-form {
+    color: #9B1212;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-right: 20px;
+}
+button.edit {
+    color: whitesmoke;
+    background-color: #9B1212;
+    border-color: #9B1212;
+    border-width: inherit;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+/*CLASES DE JOAQUIN*/
+table.formulario.id {
+    width: 305px;
+    height: 60px;
+    
+}
+h2.titulo{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #9B1212;
+    margin: 40px 0px 20px 0px;
+    text-align: center;
+}
+textarea.comentario {
+    width: -webkit-fill-available;
+    margin-top: 10px;
+    border-radius: 5px;
 }

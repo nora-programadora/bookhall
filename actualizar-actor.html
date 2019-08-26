@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+	<title>BookHall</title>
+	<link rel="icon" type="image/png" href="recursos/icono-cerveza.png" />
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="icon" type="image/png" href="" />
+</head>
+
+<body>
+
+<div id="header" class="menu" >
+    <div class="icon-client"><img src="img/udeg.png" alt="Smiley face" height="50" width="35"></div>
+    <ul id="button" class="nav">
+      <li><a href="#">Administrador</a>
+          <ul>
+                <li><a href="">listado de actores</a></li>
+                <li><a href="">alta de actor</a></li>
+                <li><a href="">actualizar actor</a></li>
+                <li><a href="">personalizar Bookhall</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Bibliotecario</a>
+          <ul>
+                <li><a href="">alta de artículo</a></li>
+                <li><a href="">actualizar artículo</a></li>
+                <li><a href="">baja de artículo</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Préstamos</a>
+          <ul>
+                <li><a href="">préstamos</a></li>
+                <li><a href="">devolución</a></li>
+                <li><a href="">estatus de usuario</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Consultar</a> 
+            <ul>
+                <li><a href="">Basica</a></li>
+                <li><a href="">Multi-campo</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Comentarios</a></li>
+        <li><a href="#">Permisos</a>
+            <ul>
+                <li><a href="">consultas</a></li>
+                <li><a href="">préstamos</a></li>
+                <li><a href="">registrar usuario</a></li>
+                <li><a href="">bibliotecario</a></li>
+                <li><a href="">administrador</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Perfil</a>
+            <ul>
+                <li><a href="">Ingresar</a></li>
+                <li><a href="">salir</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div><h1 class="titulo">Actualizar Actor</h1></div>
+<div class="formulario">
+    <form action=".php" method="post" enctype="multipart/form-data" class="busqueda-basica" >
+        <table class="formulario">
+         <tr> 
+            <td class="name first"><label>Nombre</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+         </tr>
+         
+         <tr> 
+            <td class="name first"><label>Código de usuario</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+         </tr>
+
+         <tr> 
+            <td class="name first"><label>Correo</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+            <td class="button"><input type="button" value="MODIFICAR"></td>
+         </tr>
+        
+         <tr> 
+            <td class="name first"><label>Contraseña</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+            <td class="button"><input type="button" value="MODIFICAR"></td>
+         </tr>
+
+         <tr> 
+            <td class="name first"><label>Código</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+         </tr>
+
+         <tr>
+            <td class="name"><label>Rol</label></td>
+            <td class="i-form last">
+                <select>
+                  <option value="volvo"> Prestamista </option>
+                  <option value="saab"> Bibliotecario </option>
+                  <option value="mercedes"> Administrador </option>
+                </select>
+            </td>
+            <td class="button"><input type="button" value="MODIFICAR"></td>
+         </tr>
+
+     </table>
+
+     <div class="botones b-basica">
+         <label><input type="reset" value="Cancelar"></input></label>
+         <label><input type="submit" value="Confirmar" class="enviar"></input></label>
+     </div>
+
+     <div class="elimnar-actor">
+       <label><td class="button"><input type="button" value="Elimina Actor"></td></label>
+     </div>
+    </form>
+</div>
+</body>
+</html>

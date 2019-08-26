@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <title>BookHall</title>
+    <link rel="icon" type="image/png" href="img/libros.png" />
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+<div class="menuContainer"></div>
+<div><h1 class="titulo">Búsqueda multi-campo</h1></div>
+<div class="formulario">
+    <form action=".php" method="post" enctype="multipart/form-data" class="busqueda-multi-campo" >
+        <table class="formulario">
+         <tr> 
+            <td class="name first"><label>Materia</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+         </tr>
+         <tr> 
+            <td class="name"><label>Autor</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+         </tr>
+         <tr> 
+            <td class="name"><label>Titulo</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+         </tr>
+         <tr>
+            <td class="name"><label>Año</label></td>
+            <td class="i-form last"><input type="text" name="" placeholder="" value=""></td>
+         </tr>
+     </table>
+     <div class="botones b-multi-campo">
+         <label><input type="reset" value="Borrar"></input></label>
+         <label><input type="submit" value="Buscar" class="enviar"></input></label>
+     </div>
+    </form>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+      $('.menuContainer').load('./menu.html');
+    });
+</script>
+</html>

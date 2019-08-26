@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
 	<title>BookHall</title>
-	<link rel="icon" type="image/png" href="recursos/icono-cerveza.png" />
+    <link rel="icon" type="image/png" href="img/libros.png" />
     <link rel="stylesheet" type="text/css" href="style.css"> 
-    <link rel="icon" type="image/png" href="" />
 </head>
 <body>
-<div class="menu">
-	<div class="icon-client"><img src="img/udeg.png" alt="Smiley face" height="50" width="35"></div>
-	<ul id="button">
-		 <li><a href="#">Consultar</a></li>
-		 <li><a href="#">Comentarios</a></li>
-		 <li><a href="#">Permisos</a></li>
-		 <li><a href="#">Perfil</a></li>
-		 <li>Holi</li>
-	 </ul>
-</div>
+<div class="menuContainer"></div>
 <div><h1 class="titulo">Búsqueda básica</h1></div>
 <div class="formulario">
-    <form action=".php" method="post" enctype="multipart/form-data" >
-    	<table>
-    		<tr>
-    		<td><a href="lista_marcas.php">Regresar al listado</a></td>
-    		<td></td>
-    	</tr>
-         <tr>
-            <td><label>Nombre</label></td>
-            <td><input type="text" name="nombre" placeholder="nombre" value=""></td>
+    <form action="index.php" method="post" enctype="multipart/form-data" class="busqueda-basica" >
+        <table class="formulario">
+         <tr> 
+            <td class="name first"><label>Escribe una palabra o frase</label></td>
+            <td class="i-form"><input type="text" name="palabra" placeholder="" value=""></td>
          </tr>
-    	</table>
-	</form>
+         <tr>
+            <td class="name"><label>Campo de busqueda</label></td>
+            <td class="i-form">
+                <select>
+                  <option value="volvo">Libro</option>
+                  <option value="saab">revista</option>
+                  <option value="mercedes">periodico</option>
+                  <option value="audi">cd</option>
+                </select>
+            </td>
+         </tr>
+         <tr>
+            <td class="name"><label>Palabras adyacentes</label></td>
+            <td class="i-form">
+                <input type="radio" name="" placeholder="" value="NO"><label class="itr-form">NO</label>
+                <input type="radio" name="" placeholder="" value="SI"><label class="itr-form">SI</label>
+            </td>
+         </tr>
+         <tr>
+            <td class="name"><label>Cátalogo</label></td>
+            <td class="i-form last">
+                <select>
+                  <option value="volvo"> Centro universitario de Ciencias Exactas e Ingenierias </option>
+                  <option value="saab"> Centro universitario de Ciencias Sociales y Humanidades </option>
+                  <option value="mercedes">  universitario de arte, arquitectura y diseño </option>
+                  <option value="audi"> Centro universitario de la cienega </option>
+                </select>
+            </td>
+         </tr>
+     </table>
+     <div class="botones b-basica">
+         <label><input type="reset" value="Borrar"></input></label>
+         <label><input type="submit" value="Buscar" class="enviar"></input></label>
+     </div>
+    </form>
 </div>
 </body>
+<script>
+    $(document).ready(function () {
+      $('.menuContainer').load('./menu.html');
+    });
+</script>
 </html>

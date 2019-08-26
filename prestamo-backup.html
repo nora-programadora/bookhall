@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BookHall</title>
+    <link rel="icon" type="image/png" href="img/libros.png" />
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="icon" type="image/png" href="" />
+</head>
+<body>
+<div id="header" class="menu" >
+    <div class="icon-client"><img src="img/udeg.png" alt="Smiley face" height="50" width="35"></div>
+    <ul id="button" class="nav">
+        <li><a href="#">Bibliotecario</a>
+            <ul>
+                <li><a href="">Registrar ejemplar libro</a></li>
+                <li><a href="">Actualizar ejemplar</a></li>
+                <li><a href="">Eliminar de ejemplar</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Prestamos</a>
+            <ul>
+                <li><a href="">Préstamo</a></li>
+                <li><a href="">Devolución</a></li>
+                <li><a href="">Estatus de usuario</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Consultar</a>
+            <ul>
+                <li><a href="">Búsqueda básica</a></li>
+                <li><a href="">Multi-campo</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Comentarios</a></li>
+        <li><a href="#">Permisos</a>
+            <ul>
+                <li><a href="">Consultas</a></li>
+                <li><a href="">Prestamos</a></li>
+                <li><a href="">Registrar usuario</a></li>
+                <li><a href="">Bibliotecario</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Perfil</a>
+            <ul>
+                <li><a href="">Ingresar</a></li>
+                <li><a href="">salir</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div><h1 class="titulo">Prestamo</h1></div>
+<div class="formulario">
+    <form action="Prestamo.php" method="post" enctype="multipart/form-data" class="registro-usuario" >
+    	<center>
+        <table class="formulario">
+          <tr>
+            <td class="name first last"><label>Código de usuario</label></td>
+            <td class="i-form"><input type="text" name="codigo_usuario" placeholder="213400059" value=""></td>
+         </tr>
+         </table>
+         </center>
+	     <br>
+	     <center>
+	     <div><h1 class="titulo">Información de perfil</h1></div>
+	     <table class="formulario pie-editorial">
+	         <tr> 
+	            <td class="name first"><label>Nombre</label></td>
+	            <td class="i-form"><input type="text" name="nombre_usuario" placeholder="" value=""></td>
+	         </tr>
+	         <tr> 
+	            <td class="name"><label>Código de usuario</label></td>
+            <td class="i-form"><input type="text" name="codigo_usuario" placeholder="213400059" value=""></td>
+	         </tr>
+	         <tr> 
+	            <td class="name"><label>Correo</label></td>
+	            <td class="i-form"><input type="text" name="correo" placeholder="" value=""></td>
+	         </tr>
+	         <tr> 
+	            <td class="name"><label>Estatus</label></td>
+	            <td class="i-form"><input type="text" name="estatus" placeholder="" value=""></td>
+	         </tr>
+	         <tr>
+	            <td class="name"><label>Tipo de usuario</label></td>
+	            <td class="i-form last"><input type="text" name="tipo" placeholder="" value=""></td>
+	         </tr>
+	     </table>
+	     </center>
+	    <center>
+	    <div><h1 class="titulo">Código de título</h1></div>
+        <table class="formulario">
+         <tr> 
+            <td class="name first last"><label>Código de titulo</label></td>
+            <td class="i-form last"><input type="text" name="codigo_titulo" placeholder="20203040" value=""></td>
+         </tr>
+         </table>
+         </center>
+	     <!--PRESTAMOS SOLICITADO-->
+	    <div><h1 class="titulo">Prestamo solicitado</h1></div>
+	    <center>
+	    <div class="formulario">
+	    <table class="formulario prestamo-solicitado" style="" >
+	      <tr>
+	        <th class="r-title"><label>Identificador</label></th>
+	        <th class="r-title"><label>N.Ejemplar</label></th>
+	        <th class="r-title"><label>Titulo</label></th>
+	        <th class="r-title"><label>Fecha inicio</label></th>
+	        <th class="r-title"><label>Fecha fin</label></th>
+	      </tr>
+	      <tr>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	      </tr>
+	    </table>
+	    </div>
+	    </center>
+	     
+	     <!--PRESTAMOS EN CURSO-->
+	     <!--
+	    <div><h1 class="titulo">Prestamos en curso</h1></div>
+	    <center>
+	    <div class="formulario">
+	    <table class="full-table" style="" >
+	      <tr>
+	        <th class="r-title"><label>Identificador</label></th>
+	        <th class="r-title"><label>N.Ejemplar</label></th>
+	        <th class="r-title"><label>Titulo</label></th>
+	        <th class="r-title"><label>Fecha inicio</label></th>
+	        <th class="r-title"><label>Fecha fin</label></th>
+	      </tr>
+	      <tr>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	      </tr>
+	    </table>
+	    </div>
+	    </center>
+		-->
+	    <!--ADEUDOS-->
+	    <!--
+	    <div><h1 class="titulo">Adeudos</h1></div>
+	    <center>
+	    <div class="formulario">
+	    <table class="formulario" style="" >
+	      <tr>
+	        <th class="r-title"><label>Identificador</label></th>
+	        <th class="r-title"><label>N.Ejemplar</label></th>
+	        <th class="r-title"><label>Titulo</label></th>
+	        <th class="r-title"><label>Fecha inicio</label></th>
+	        <th class="r-title"><label>Fecha fin</label></th>
+	        <th class="r-title"><label>Días de retraso</label></th>
+	        <th class="r-title"><label>Cobrar</label></th>
+	      </tr>
+	      <tr>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name"><button class="edit">Cobrar</button></td>
+	      </tr>
+	      <tr>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name">hola</td>
+	        <td class="r-name"><button class="edit">Cobrar</button></td>
+	      </tr>
+	    </table>
+	    </div>
+	    </center>-->
+	     <div class="botones b-prestamo">
+	         <label><input type="reset" value="Borrar"></input></label>
+	         <label><input type="submit" value="Registrar" class="enviar"></input></label>
+	     </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <title>BookHall</title>
+    <link rel="icon" type="image/png" href="img/libros.png" />
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+<div class="menuContainer"></div>
+<div><h1 class="titulo">Registrando usuario</h1></div>
+<div class="formulario">
+    <form action="registro-usuario.php" method="post" enctype="multipart/form-data" class="registro-usuario" >
+          <table class="formulario">
+         <tr> 
+            <td class="name first"><label>Nombre</label></td>
+            <td class="i-form"><input type="text" name="nombre_usuario" placeholder="Juan Perez" value=""></td>
+         </tr>
+        <tr> 
+            <td class="name"><label>Código de usuario</label></td>
+            <td class="i-form"><input type="text" name="codigo" placeholder="213400059" value=""></td>
+         </tr>
+         <tr> 
+            <td class="name"><label>Tipo de usuario</label></td>
+            <td class="i-form"><input type="text" name="tipo_usuario" placeholder="Licenciatura" value=""></td>
+         </tr>
+         <tr> 
+            <td class="name"><label>Estatus</label></td>
+            <td class="i-form"><input type="text" name="estatus" placeholder="activo" value=""></td>
+         </tr>
+         <tr> 
+            <td class="name first"><label>Correo</label></td>
+            <td class="i-form"><input type="text" name="correo" placeholder="nora.aguirre@alumonos.udg.mx" value=""></td>
+         </tr>
+         <tr>
+            <td class="name"><label>Contraseña</label></td>
+            <td class="i-form last"><input type="text" name="contrasena" placeholder="patito666" value=""></td>
+         </tr>
+     </table>
+     <div class="botones r-usuario">
+         <label><input type="reset" value="Borrar"></input></label>
+         <label><input type="submit" value="Registrar" class="enviar"></input></label>
+     </div>
+    </form>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+      $('.menuContainer').load('./menu.html');
+    });
+</script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>BookHall</title>
+	<link rel="icon" type="image/png" href="recursos/icono-cerveza.png" />
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="icon" type="image/png" href="" />
+</head>
+<body>
+<div id="header" class="menu" >
+    <div class="icon-client"><img src="img/udeg.png" alt="Smiley face" height="50" width="35"></div>
+    <ul id="button" class="nav">
+        <li><a href="#">Consultar</a>
+            <ul>
+                <li><a href="index.html">Basica</a></li>
+                <li><a href="busqueda-multicampo.html">Multi-campo</a></li>
+            </ul>
+        </li>
+        <li><a href="comentario.html">Comentarios</a></li>
+        <li><a href="#">Permisos</a>
+            <ul>
+                <li><a href="index.html">consultas</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Perfil</a>
+            <ul>
+                <li><a href="login-general.html">Ingresar</a></li>
+                <li><a href="">salir</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div><h1 class="titulo">Información de perfil</h1></div>
+<div class="formulario">
+    <form action=".php" method="post" enctype="multipart/form-data" class="perfil-actor" >
+        <table class="formulario">
+         <tr> 
+            <td class="name first"><label>Nombre</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+         </tr>
+         <tr> 
+            <td class="name"><label>Código de usuario</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+         </tr>
+         <tr> 
+            <td class="name"><label>Rol</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+         </tr>
+         <tr> 
+            <td class="name"><label>Correo</label></td>
+            <td class="i-form"><input type="text" name="" placeholder="" value=""></td>
+            <td><button class="edit">Editar</button></td>
+         </tr>
+         <tr> 
+            <td class="name"><label>Contraseña</label></td>
+            <td class="i-form last"><input type="text" name="" placeholder="" value=""></td>
+            <td><button class="edit">Editar</button></td>
+         </tr>
+     </table>
+     <div class="botones perfil-a">
+         <label><input type="reset" value="Borrar"></input></label>
+         <label><input type="submit" value="Buscar" class="enviar"></input></label>
+     </div>
+    </form>
+</div>
+</body>
+</html>
